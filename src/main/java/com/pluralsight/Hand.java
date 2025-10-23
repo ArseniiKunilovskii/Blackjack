@@ -4,6 +4,16 @@ import java.util.ArrayList;
 
 public class Hand {
     private ArrayList<Card> cards;
+    private String name;
+    boolean overdraft = false;
+
+    public boolean isOverdraft() {
+        return overdraft;
+    }
+
+    public void setOverdraft(boolean overdraft) {
+        this.overdraft = overdraft;
+    }
 
     public Hand() {
         cards = new ArrayList<>();
@@ -40,6 +50,13 @@ public class Hand {
             System.out.println(card.getValue() + " of " + card.getSuit());
             card.flip();
         }
+    }
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
 

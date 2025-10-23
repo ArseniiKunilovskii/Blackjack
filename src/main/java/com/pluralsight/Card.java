@@ -5,6 +5,7 @@ public class Card {
     private String value;
     private boolean isFaceUp;
 
+
     public Card(String suit, String value) {
         this.suit = suit;
         this.value = value;
